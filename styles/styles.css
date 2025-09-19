@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+/*grijs #899CA0 & donkergroen #1C2B32*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    ---grijs: #899CA0;
+    ---donkergroen: #1C2B32;
+    ---border-radius-elements: 5px;
+    ---font-size: .7rem;
+    ---font-size-small: .6rem;
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a {
+    color: var(---grijs);
+}
+a:visited{
+    color: var(---grijs);
+}
+a:hover {
+    text-decoration: inherit;
+}
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: var(---font-size);
+        min-height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    text-align: center;
+    color: var(---donkergroen);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 1.3rem;
+    padding: 35px 0;
+}
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+/*///////////// 3.1 Header /////////////*/
+header {
+    background-image:url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 300px 0;
+    text-align: center;
+}
+.header-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header > div > p {
+    font-size: var(---font-size-small);
+    padding-bottom: 20px;
+}
+form {
+    margin: 0 auto;
+    border: 1px solid var(---donkergroen);
+    border-radius: 30px;
+    overflow: hidden;
+    width: fit-content;;
+}
+#text-field {
+    all: unset;
+    font-size: var(---font-size-small);
+    min-width: 120px;
+    background: transparent;
+    padding-left: 20px;
+    padding-right: 45px;
+    text-align: left;
+}
+#text-field::placeholder {
+    color: var(---donkergroen);
+}
+div > form > button {
+    all: unset;
+    cursor: pointer;
+    background-color: var(---donkergroen);
+    color: white;
+    font-size: var(---font-size-small);
+    padding: 15px  15px;
+    transition: all 0.2s ease-in-out;
+}
+form button:hover{
+    background-color: var(---grijs);
+    color: var(---donkergroen);
+    transition-delay: 0.1s;
+}
+
+/*///////////// 3.2 Testimonial /////////////*/
+.article-container {
+    border-radius: var(---border-radius-elements);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    padding: 30px 50px;
+}
+.section-testimonial h2 + article {
+    margin-bottom: 40px;
+}
+.quotes-img {
+    display: inline;
+    width: 20px;
+    margin-right: 10px;
+}
+.avatar-container{
+    height: 44px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.inline {
+    display: inline;
+}
+.avatar-container img {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.avatar-container cite{
+    padding: 0 20px;
+}
+
+/*///////////// 3.3 Support /////////////*/
+.section-support > img {
+    width: 100%;
+    border-radius: var(---border-radius-elements);
+}
+.section-support p {
+    margin: 15px 0;
+}
+.section-support button{
+    all: unset;
+    cursor: pointer;
+    background-color: var(---donkergroen);
+    color: white;
+    font-size: var(---font-size-small);
+    padding: 15px  15px;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+.section-support button:hover {
+    background-color: white;
+    color: var(---donkergroen);
+    transition-delay: 0.1s;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/*///////////// 3.4 Faq /////////////*/
+details {
+    margin: 30px 0;
+}
+details summary{
+    font-weight: 300;
+    cursor: pointer;
+}
+details p {
+    background-color: var(---grijs);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/*///////////// 3.5 Footer /////////////*/
+footer {
+    background-color: var(---donkergroen);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+    position: static;
+    bottom: -10px;
+}
+/*kan je de achtergrondkleur door laten lopen? bij te ver door-scrollen word achtergrond een stuk wit.*/
