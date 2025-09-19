@@ -145,6 +145,7 @@ form button:hover{
 .avatar-container img {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
 }
